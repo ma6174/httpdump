@@ -51,7 +51,7 @@ func handleConn(conn net.Conn, dest string) {
 		}()
 		_, err := io.Copy(mw, src)
 		if err != nil {
-			log.Println(err)
+			log.Printf("%v ERROR %v", id, err)
 		}
 
 	}
