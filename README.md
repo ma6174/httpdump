@@ -1,7 +1,7 @@
 # httpdump
 
 ```
-$ go build httpdump.go && ./httpdump -d 'baidu.com:80'
+$ go build httpdump.go && ./httpdump -l :9999 -d baidu.com:80
 2019/07/13 15:45:23.875308 http dump server running at :9999 and proxy to baidu.com:80
 2019/07/13 15:45:25.167046 bvhynenaz534 ==================== begin [[::1]:54079 <-> 220.181.38.148:80]: ====================
 2019/07/13 15:45:25.167231 bvhynenaz534 --> GET http://baidu.com/ HTTP/1.1
